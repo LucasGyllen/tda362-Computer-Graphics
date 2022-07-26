@@ -15,6 +15,9 @@
 // Various globals
 ///////////////////////////////////////////////////////////////////////////////
 
+
+//test
+
 // The window we'll be rendering to
 extern SDL_Window* g_window = nullptr;
 
