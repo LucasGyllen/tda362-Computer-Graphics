@@ -252,7 +252,10 @@ void display(void)
 
 
 	//Fix for Excersice 1
-	
+	/*glClear(GL_BUFFER); statement didn’t actually clear any specific buffer, 
+	which could lead to rendering issues. By specifying GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT, 
+	the screen is properly reset, which is essential for each new frame.*/
+
 	//glClear(GL_BUFFER); // Clears the color buffer and the z-buffer
 	                    // Instead of glClear(GL_BUFFER) the call should be glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
